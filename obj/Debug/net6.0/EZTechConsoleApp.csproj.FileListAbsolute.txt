@@ -1,0 +1,14 @@
+C:\Users\blencr200\source\MVCLecture\EZTechConsoleApp\bin\Debug\net6.0\EZTechConsoleApp.exe
+C:\Users\blencr200\source\MVCLecture\EZTechConsoleApp\bin\Debug\net6.0\EZTechConsoleApp.deps.json
+C:\Users\blencr200\source\MVCLecture\EZTechConsoleApp\bin\Debug\net6.0\EZTechConsoleApp.runtimeconfig.json
+C:\Users\blencr200\source\MVCLecture\EZTechConsoleApp\bin\Debug\net6.0\EZTechConsoleApp.dll
+C:\Users\blencr200\source\MVCLecture\EZTechConsoleApp\bin\Debug\net6.0\EZTechConsoleApp.pdb
+C:\Users\blencr200\source\MVCLecture\EZTechConsoleApp\obj\Debug\net6.0\EZTechConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\blencr200\source\MVCLecture\EZTechConsoleApp\obj\Debug\net6.0\EZTechConsoleApp.AssemblyInfoInputs.cache
+C:\Users\blencr200\source\MVCLecture\EZTechConsoleApp\obj\Debug\net6.0\EZTechConsoleApp.AssemblyInfo.cs
+C:\Users\blencr200\source\MVCLecture\EZTechConsoleApp\obj\Debug\net6.0\EZTechConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\blencr200\source\MVCLecture\EZTechConsoleApp\obj\Debug\net6.0\EZTechConsoleApp.dll
+C:\Users\blencr200\source\MVCLecture\EZTechConsoleApp\obj\Debug\net6.0\refint\EZTechConsoleApp.dll
+C:\Users\blencr200\source\MVCLecture\EZTechConsoleApp\obj\Debug\net6.0\EZTechConsoleApp.pdb
+C:\Users\blencr200\source\MVCLecture\EZTechConsoleApp\obj\Debug\net6.0\EZTechConsoleApp.genruntimeconfig.cache
+C:\Users\blencr200\source\MVCLecture\EZTechConsoleApp\obj\Debug\net6.0\ref\EZTechConsoleApp.dll
