@@ -2,14 +2,13 @@
 using EZTechConsoleApp.DataAccess;
 using System;
 
-namespace EZTechMovieApp
+namespace EZTechConsoleApp
 {
     class Program
     {
         static void Main()
         {
             char choice;
-
             IMovieRepository movieRepository = new MovieRepository();
             IMovieBusiness movieBusiness = new MovieBusiness(movieRepository);
 
@@ -18,19 +17,26 @@ namespace EZTechMovieApp
                 Console.Write("Would you like to store additional movies? (Y/N): ");
                 choice = Console.ReadKey().KeyChar;
 
-                if (choice == 'Y' || choice == 'y')
-                {
-                    movieBusiness.AddMovie();
-                }
-                else if (choice == 'N' || choice == 'n')
-                {
-                    Console.WriteLine("\nYour Movie has been stored to the database. Thank you!");
-                }
-                else
+                if (choice != 'Y' && choice != 'y' && choice != 'N' && choice != 'n')
                 {
                     Console.WriteLine("\nInvalid choice. Please enter 'Y' or 'N'.");
                 }
-            } while (choice == 'Y' || choice == 'y');
+            } while (choice != 'Y' && choice != 'y' && choice != 'N' && choice != 'n');
+
+            if (choice == 'Y' || choice == 'y')
+            {
+                do
+                {
+                    movieBusiness.AddMovie();
+                    Console.Write("Would you like to store additional movies? (Y/N): ");
+                    choice = Console.ReadKey().KeyChar;
+
+                    if (choice != 'Y' && choice != 'y' && choice != 'N' && choice != 'n')
+                    {
+                        Console.WriteLine("\nInvalid choice. Please enter 'Y' or 'N'.");
+                    }
+                } while (choice == 'Y' || choice == 'y');
+            }
 
             movieBusiness.DisplayMovies();
         }

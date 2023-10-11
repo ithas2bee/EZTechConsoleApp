@@ -36,11 +36,22 @@ namespace EZTechConsoleApp.BusinessLogic
                 movie.Cast.Add(Console.ReadLine());
             }
 
-            Console.Write("Enter the movie rating: ");
-            movie.Rating = Console.ReadLine();
+            // Movie rating validation
+            List<string> validRatings = new List<string> { "G", "PG", "PG-13", "R" };
+            do
+            {
+                Console.Write("Enter the movie rating: ");
+                movie.Rating = Console.ReadLine().ToUpper();
+
+                if (!validRatings.Contains(movie.Rating))
+                {
+                    Console.WriteLine("Invalid movie rating. Please enter a valid rating.");
+                }
+            } while (!validRatings.Contains(movie.Rating));
 
             movieRepository.AddMovie(movie);
         }
+
 
         public void DisplayMovies()
         {
